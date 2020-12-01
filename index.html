@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Modal Exercise</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Document</title>
-</head>
+	<body>
+		<!-- Button -->
+		<div class="container">
+			<button
+				class="modal-open-btn my-5 btn btn-lg btn-primary"
+				data-toggle="modal"
+				data-target="#exampleModal"
+			>
+				Open modal
+			</button>
+		</div>
 
-<body>
+		<!-- Modal -->
+		<div class="modal-wrapper d-none">
+			<div class="modal-content w-75 mx-auto">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">I am Modal</h5>
+					<button
+						type="button"
+						class="modal-close-btn close"
+						data-dismiss="modal"
+						aria-label="Close"
+					>
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">...</div>
+				<div class="modal-footer">
+					<button
+						type="button"
+						class="modal-close-btn btn btn-secondary"
+						data-dismiss="modal"
+					>
+						Close
+					</button>
+				</div>
+			</div>
+			<div class="modal-shadow"></div>
+		</div>
 
-
-
-
-
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/utils.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
-
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
 </html>
